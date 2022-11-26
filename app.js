@@ -6,7 +6,7 @@ var cookieParser = require("cookie-parser");
 const db = require("./config/database");
 const allRoutes = require("./routes");
 
-const PORT = process.env.port || 8080;
+const PORT = process.env.port || 3000;
 
 app.use(express.json());
 app.use(
