@@ -19,5 +19,14 @@
     "express": "^4.18.2",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.7.3"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/star2112/menthy-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/star2112/menthy-backend/issues"
+  },
+  "homepage": "https://github.com/star2112/menthy-backend#readme"
 }
