@@ -17,9 +17,7 @@ module.exports = {
       const article = await Article.find({});
 
       if (article !== null) {
-        res.status(200).json({
-          data: article,
-        });
+        res.status(200).json(article);
       } else {
         return error;
       }
@@ -36,9 +34,7 @@ module.exports = {
       const article = await Article.findById(id);
 
       if (article !== null) {
-        res.status(200).json({
-          data: article,
-        });
+        res.status(200).json(article);
       } else {
         return error;
       }

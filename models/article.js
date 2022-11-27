@@ -6,6 +6,30 @@ const articleSchema = new Schema({
     required: true,
     type: String,
   },
+  subTitle: {
+    required: true,
+    type: String,
+  },
+  popular: {
+    required: true,
+    type: Boolean,
+  },
+  new: {
+    required: true,
+    type: Boolean,
+  },
+  genre: {
+    required: true,
+    type: String,
+  },
+  imgURL: {
+    required: true,
+    type: String,
+  },
+  description: {
+    required: true,
+    type: String,
+  },
   text: {
     required: true,
     type: String,
