@@ -6,7 +6,7 @@ const articleSchema = new Schema({
     required: true,
     type: String,
   },
-  subTitle: {
+  sub_title: {
     required: true,
     type: String,
   },

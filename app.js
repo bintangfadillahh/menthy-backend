@@ -15,7 +15,7 @@ app.use(
   })
 );
 app.use(allRoutes);
-app.use(cors());
+
 app.use(cookieParser());
 
 db.then(() => {
