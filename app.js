@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
+
 require("dotenv").config();
-var cookieParser = require("cookie-parser");
+
 const db = require("./config/database");
 const allRoutes = require("./routes");
 
@@ -14,8 +15,6 @@ app.use(
   })
 );
 app.use(allRoutes);
-
-app.use(cookieParser());
 
 db.then(() => {
   console.log("Database Connected");
