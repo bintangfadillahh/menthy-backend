@@ -7,6 +7,7 @@ module.exports = {
     const user = new User({
       name: req.body.name,
       email: req.body.email,
+      no_handphone: req.body.no_handphone,
       role: req.body.role,
       password: bcrypt.hashSync(req.body.password, 8),
     });
@@ -65,6 +66,7 @@ module.exports = {
           id: user._id,
           email: user.email,
           name: user.name,
+          no_handphone: user.no_handphone,
           role: user.role,
         },
         message: "Login success!",
