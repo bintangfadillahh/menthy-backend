@@ -2,11 +2,13 @@ const express = require("express");
 const app = express();
 
 require("dotenv").config();
-
+const cors = require("cors");
 const db = require("./config/database");
 const allRoutes = require("./routes");
 
 const PORT = process.env.PORT || 3000;
+
+app.use(cors({ origin: "http://127.0.0.1:5501" }));
 
 app.use(express.json());
 app.use(
